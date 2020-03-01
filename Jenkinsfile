@@ -14,8 +14,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker cp * ${c.id}:/'
-                sh 'python test1.py'
+               # sh 'docker cp * ${c.id}:/'
+               # sh 'python test1.py'
+               sh 'echo deploying to test'
             }
         }
     }

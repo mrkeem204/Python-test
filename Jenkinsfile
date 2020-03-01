@@ -14,6 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                sh 'docker cp test1.py'
                 sh 'python test1.py'
             }
         }

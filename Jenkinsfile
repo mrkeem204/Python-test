@@ -12,6 +12,11 @@ pipeline {
                 sh 'python --version'
             }
         }
+        stage('Deploy') {
+            steps {
+                sh 'python test1.py'
+            }
+        }
     }
     
 }
